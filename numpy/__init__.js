@@ -1852,7 +1852,7 @@ var $builtinmodule = function (name) {
       self.tp$name = CLASS_NDARRAY; // set class name
     });
 
-    $loc._internalGenericGetAttr = Sk.builtin.object.prototype.GenericSetAttr;
+    $loc._internalGenericGetAttr = Sk.generic.setAttr;
 
     $loc.__getattr__ = new Sk.builtin.func(function (self, name) {
         if (name != null && (Sk.builtin.checkString(name) || typeof name === "string")) {
